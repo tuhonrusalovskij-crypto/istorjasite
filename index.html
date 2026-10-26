@@ -5,148 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Феодальная раздробленность на Руси</title>
     <style>
+        * { box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: 'Georgia', 'Times New Roman', serif;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
+            color: #2c2c2c;
+            background-color: #f9f7f1;
+            line-height: 1.7;
         }
         header {
-            background: #2c3e50;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('images/map.jpg') center/cover no-repeat;
             color: #fff;
-            padding: 2rem 1rem;
+            padding: 6rem 2rem;
             text-align: center;
         }
         header h1 {
-            margin: 0;
-            font-size: 2.2rem;
+            font-size: 3rem;
+            margin: 0 0 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
         }
         header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
         }
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            background: #fff;
-            padding: 1.5rem 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 0.5rem;
-        }
-        h3 {
-            color: #34495e;
-            margin-top: 1.2rem;
-        }
-        ul {
-            padding-left: 1.2rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        .principalities {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        .card {
-            background: #ecf0f1;
-            padding: 1rem;
-            border-radius: 6px;
-            border-left: 4px solid #3498db;
-        }
-        .card h4 {
-            margin-top: 0;
-            color: #2980b9;
-        }
-        footer {
+        nav {
+            background: #3e2723;
             text-align: center;
             padding: 1rem;
-            color: #7f8c8d;
-            font-size: 0.9rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        .note {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 0.8rem 1rem;
-            margin: 1rem 0;
-            border-radius: 4px;
+        nav a {
+            color: #d7ccc8;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            font-family: 'Arial', sans-serif;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #fff; border-bottom: 2px solid #fff; }
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+        .intro {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid #8d6e63;
+        }
+        h2 {
+            color: #3e2723;
+            border-bottom: 2px solid #d7ccc8;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            font-size: 1.8rem;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .card-content { padding: 1.2rem; }
+        .card-content h3 { margin-top: 0; color: #5d4037; }
+        .card-content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #8d6e63;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .card-content a:hover { text-decoration: underline; }
+        footer {
+            background: #3e2723;
+            color: #d7ccc8;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+            font-family: sans-serif;
         }
     </style>
 </head>
 <body>
 
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="kiev.html">Киев</a>
+    <a href="novgorod.html">Новгород</a>
+    <a href="vladimir.html">Владимир</a>
+    <a href="galich.html">Галич</a>
+</nav>
+
 <header>
     <h1>Феодальная раздробленность на Руси</h1>
-    <p>Период политической и экономической обособленности русских земель (XII–XV вв.)</p>
+    <p>Период самостоятельных княжеств и земель (XII–XV века)</p>
 </header>
 
-<main>
-    <section>
+<div class="container">
+    <div class="intro">
         <h2>Что это такое?</h2>
-        <p>Феодальная раздробленность — это закономерный этап в развитии государства, при котором единая страна распадается на практически независимые друг от друга владения. На Руси этот период охватывает примерно <strong>с 1132 года (смерть Мстислава Великого) до конца XV века</strong>, когда земли начали объединяться вокруг Москвы.</p>
-        <p>Если в XII веке насчитывалось около 15 княжеств, то к концу XIV века их число выросло до 250.</p>
-    </section>
+        <p>После смерти киевского князя Мстислава Великого в 1132 году единое Древнерусское государство распалось на несколько крупных самостоятельных центров. Этот период называют <strong>феодальной раздробленностью</strong>.</p>
+        <p>Если в середине XII века насчитывалось около 15 княжеств, то к началу XIV века их число выросло до 250. Каждое княжество вело свою политику, чеканило монету и содержало войско. Однако русские земли сохраняли единство языка, культуры и веры.</p>
+    </div>
 
-    <section>
-        <h2>Причины раздробленности</h2>
-        <ul>
-            <li><strong>Экономические:</strong> господство натурального хозяйства (каждое княжество обеспечивало себя само) и рост крупного боярского землевладения.</li>
-            <li><strong>Политические:</strong> ослабление центральной власти в Киеве и усиление местных князей, которые не желали делиться доходами с великим князем.</li>
-            <li><strong>Внешние:</strong> снижение внешней угрозы (после разгрома половцев) позволило удельным князьям меньше зависеть от центра в вопросах защиты.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Крупнейшие центры Руси</h2>
-        <div class="principalities">
-            <div class="card">
-                <h4>Владимиро-Суздальское княжество</h4>
-                <p>Северо-Восток Руси. Здесь сформировалась сильная княжеская власть. Центр будущего Московского государства. Известные правители: Юрий Долгорукий (при нём в 1147 г. впервые упомянута Москва), Андрей Боголюбский, Всеволод Большое Гнездо.</p>
-            </div>
-            <div class="card">
-                <h4>Новгородская земля</h4>
-                <p>Северо-Запад. Здесь сложилась <strong>боярская республика</strong>. Высшим органом было вече, которое приглашало и изгоняло князя (он выполнял в основном военные функции). Ключевые должности: посадник и тысяцкий.</p>
-            </div>
-            <div class="card">
-                <h4>Галицко-Волынское княжество</h4>
-                <p>Юго-Запад. Особенность: острая борьба между князьями и местным боярством, которое часто опиралось на помощь Венгрии или Польши. Здесь была ограниченная монархия.</p>
+    <h2>Крупнейшие центры</h2>
+    <div class="cards">
+        <!-- Карточка 1: Киев -->
+        <div class="card">
+            <div class="card-content">
+                <h3>Киевское княжество</h3>
+                <p>«Мать городов русских» постепенно теряет былое могущество, но остается важным культурным и религиозным центром.</p>
+                <a href="kiev.html">Подробнее →</a>
             </div>
         </div>
-    </section>
-
-    <section>
-        <h2>Последствия</h2>
-        <h3>Положительные</h3>
-        <ul>
-            <li>Расцвет культуры и ремёсел в отдельных землях (строительство храмов, летописание).</li>
-            <li>Освоение новых земель и рост числа городов.</li>
-            <li>Укрепление местного аппарата управления.</li>
-        </ul>
-        <h3>Отрицательные</h3>
-        <ul>
-            <li>Постоянные междоусобные войны князей.</li>
-            <li>Ослабление военного потенциала и обороноспособности страны, что сделало Русь уязвимой перед монгольским нашествием.</li>
-        </ul>
-        <div class="note">
-            <strong>Важно:</strong> Несмотря на политический распад, русские земли сохраняли культурное и языковое единство, а церковь выступала за объединение.
+        <!-- Карточка 2: Новгород -->
+        <div class="card">
+            <img src="images/novgorod.jpg" alt="Новгород">
+            <div class="card-content">
+                <h3>Новгородская земля</h3>
+                <p>Боярская республика с вечевым строем. Князь здесь был лишь военачальником и не имел полноты власти.</p>
+                <a href="novgorod.html">Подробнее →</a>
+            </div>
         </div>
-    </section>
-</main>
+        <!-- Карточка 3: Владимир -->
+        <div class="card">
+            <img src="images/vladimir.jpg" alt="Владимир">
+            <div class="card-content">
+                <h3>Владимиро-Суздальское</h3>
+                <p>Северо-Восточная Русь с сильной княжеской властью. Именно эти земли станут центром объединения будущей России.</p>
+                <a href="vladimir.html">Подробнее →</a>
+            </div>
+        </div>
+        <!-- Карточка 4: Галич -->
+        <div class="card">
+            <img src="images/galich.jpg" alt="Галич">
+            <div class="card-content">
+                <h3>Галицко-Волынское</h3>
+                <p>Юго-Западная Русь. Здесь княжеская власть часто ограничивалась влиятельным боярством.</p>
+                <a href="galich.html">Подробнее →</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
-    <p>Учебный проект по истории России. Материалы подготовлены на основе открытых источников.</p>
+    <p>Учебный проект по истории России. Изображения: Wikimedia Commons (общественное достояние) и Unsplash.</p>
 </footer>
 
 </body>
