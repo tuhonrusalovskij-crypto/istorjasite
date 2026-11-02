@@ -15,6 +15,29 @@
         .page-header h1 { font-size: 2.5rem; color: #3e2723; margin-bottom: 0.5rem; }
         .page-header img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .content { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .ruler-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .ruler-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #d7ccc8;
+            flex-shrink: 0;
+        }
+        .ruler-info {
+            flex: 1;
+        }
+        .ruler-info p {
+            margin: 0.2rem 0 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
         h2 { color: #5d4037; border-bottom: 1px solid #d7ccc8; padding-bottom: 0.5rem; margin-top: 2rem; }
         h3 { color: #5d4037; margin-top: 1.5rem; }
         .facts { background: #f5f0e6; padding: 1rem 1.5rem; border-radius: 6px; margin: 1.5rem 0; }
@@ -64,10 +87,34 @@
 
         <h2>Правители</h2>
         <ul class="ruler-list">
-            <li><strong>Юрий Долгорукий</strong> (1125–1157 гг.) — основатель династии суздальских князей; боролся за Киев, укреплял Северо-Восточную Русь; при нём Москва впервые упомянута в летописи.</li>
-            <li><strong>Андрей Боголюбский</strong> (1157–1174 гг.) — перенёс столицу во Владимир; в 1169 году разгромил Киев, но не остался там княжить, что подчеркнуло перенос политического центра на северо-восток; убит боярами в результате заговора.</li>
-            <li><strong>Всеволод Большое Гнездо</strong> (1176–1212 гг.) — период наивысшего расцвета; его сыновья стали родоначальниками многих удельных династий, включая московскую.</li>
-            <li><strong>Юрий Всеволодович</strong> (1218–1238 гг.) — погиб в битве на реке Сити во время монгольского нашествия.</li>
+            <li>
+                <img src="images/dolgorukij.jpg" alt="Юрий Долгорукий" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Юрий Долгорукий</strong> (1125–1157 гг.)
+                    <p>Основатель династии суздальских князей. Боролся за Киев и укреплял Северо-Восточную Русь. При нём Москва впервые упомянута в летописи.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/bogolub.jpg" alt="Андрей Боголюбский" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Андрей Боголюбский</strong> (1157–1174 гг.)
+                    <p>Перенёс столицу во Владимир. В 1169 году разгромил Киев, но не остался там княжить, что подчеркнуло перенос политического центра на северо-восток. Был убит боярами в результате заговора.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/bgnezdo.jpg" alt="Всеволод Большое Гнездо" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Всеволод Большое Гнездо</strong> (1176–1212 гг.)
+                    <p>Период наивысшего расцвета княжества. Его сыновья стали родоначальниками многих удельных династий.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/jvsevolodovich.jpg" alt="Юрий Всеволодович" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Юрий Всеволодович</strong> (1218–1238 гг.)
+                    <p>Погиб в битве на реке Сити во время монгольского нашествия.</p>
+                </div>
+            </li>
         </ul>
 
         <h2>Культура и архитектура</h2>
