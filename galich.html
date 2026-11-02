@@ -15,6 +15,29 @@
         .page-header h1 { font-size: 2.5rem; color: #3e2723; margin-bottom: 0.5rem; }
         .page-header img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .content { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .ruler-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .ruler-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #d7ccc8;
+            flex-shrink: 0;
+        }
+        .ruler-info {
+            flex: 1;
+        }
+        .ruler-info p {
+            margin: 0.2rem 0 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
         h2 { color: #5d4037; border-bottom: 1px solid #d7ccc8; padding-bottom: 0.5rem; margin-top: 2rem; }
         h3 { color: #5d4037; margin-top: 1.5rem; }
         .facts { background: #f5f0e6; padding: 1rem 1.5rem; border-radius: 6px; margin: 1.5rem 0; }
@@ -64,9 +87,27 @@
 
         <h2>Правители</h2>
         <ul class="ruler-list">
-            <li><strong>Ярослав Осмомысл</strong> (1153–1187 гг.) — «острый умом»; успешно боролся с боярами, воевал с Византией, Венгрией и Польшей; при нём княжество достигло значительного могущества.</li>
-            <li><strong>Роман Мстиславич</strong> (1199–1205 гг.) — объединил Галич и Волынь (1199 г.); в 1202 году захватил Киев и принял титул великого князя; покровительствовал городам и торговле; погиб в походе.</li>
-            <li><strong>Даниил Романович</strong> (1221–1264 гг., с перерывами) — более 30 лет боролся с боярами и внешними врагами; в 1245 году разбил венгерско-польско-боярское войско под Ярославом и окончательно утвердил свою власть; в 1255 году принял королевскую корону от папы римского.</li>
+            <li>
+                <img src="images/osmomysl.jpg" alt="Ярослав Осмомысл" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Ярослав Осмомысл</strong> (1153–1187 гг.)
+                    <p>«Острый умом». Успешно боролся с боярами, воевал с Византией, Венгрией и Польшей. При нём княжество достигло значительного могущества.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/rmstislavich.jpg" alt="Роман Мстиславич" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Роман Мстиславич</strong> (1199–1205 гг.)
+                    <p>Объединил Галич и Волынь в 1199 г. В 1202 году захватил Киев и принял титул великого князя. Покровительствовал городам и торговле. Погиб в походе.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/daniilromanovich.jpg" alt="Даниил Романович" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Даниил Романович</strong> (1238–1264 гг.)
+                    <p>Более 30 лет боролся с боярами и внешними врагами. В 1245 году разбил венгерско-польско-боярское войско под Ярославом и окончательно утвердил свою власть. В 1255 году принял королевскую корону от папы римского. Противостоял монголам, но не смог добиться полной независимости от Орды.</p>
+                </div>
+            </li>
         </ul>
 
         <h2>Культура и архитектура</h2>
