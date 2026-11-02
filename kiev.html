@@ -15,6 +15,29 @@
         .page-header h1 { font-size: 2.5rem; color: #3e2723; margin-bottom: 0.5rem; }
         .page-header img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .content { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .ruler-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .ruler-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #d7ccc8;
+            flex-shrink: 0;
+        }
+        .ruler-info {
+            flex: 1;
+        }
+        .ruler-info p {
+            margin: 0.2rem 0 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
         h2 { color: #5d4037; border-bottom: 1px solid #d7ccc8; padding-bottom: 0.5rem; margin-top: 2rem; }
         h3 { color: #5d4037; margin-top: 1.5rem; }
         .facts { background: #f5f0e6; padding: 1rem 1.5rem; border-radius: 6px; margin: 1.5rem 0; }
@@ -63,12 +86,42 @@
         <p>Это означало, что за Киев боролись представители разных ветвей Рюриковичей, но ни одна из них не могла закрепить его за собой навсегда. В XII веке практиковалось даже <strong>соправительство</strong>: на киевском столе одновременно сидели два князя из разных земель, что создавало баланс сил.</p>
 
         <h2>Правители эпохи раздробленности</h2>
-        <ul class="ruler-list">
-            <li><strong>Ярополк Владимирович</strong> (1132–1139 гг.) — сын Мономаха; его княжение прошло в постоянных войнах и не смогло остановить распад.</li>
-            <li><strong>Всеволод Ольгович</strong> (1139–1146 гг.) — черниговский князь, силой занял Киев; показал, что киевский стол стал объектом борьбы между сильнейшими родами.</li>
-            <li><strong>Изяслав Мстиславич</strong> (1146–1154 гг., с перерывами) — вёл упорную борьбу с Юрием Долгоруким; его потомство утвердилось на Волыни и в Галиче.</li>
-            <li><strong>Юрий Долгорукий</strong> (1155–1157 гг.) — суздальский князь, занял Киев лишь в конце жизни; при нём в летописи впервые упомянута Москва (1147).</li>
-            <li><strong>Мстислав Романович</strong> (1212–1223 гг.) — погиб на реке Калке, наблюдая за разгромом союзных войск, не вступив в бой.</li>
+        <ul class="ruler-list"><li>
+            <li>
+                <img src="images/jaropolk.jpg" alt="Ярополк Владимирович" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Ярополк Владимирович</strong> (1132–1139 гг.)
+                    <p>Сын Мономаха. Его княжение прошло в постоянных войнах и не смогло остановить распад.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/volgovich.jpg" alt="Всеволод Ольгович" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Всеволод Ольгович</strong> (1139–1146 гг.)
+                    <p>Черниговский князь, силой занял Киев. Показал, что киевский стол стал объектом борьбы между сильнейшими родами.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/imstislavich.jpg" alt="Изяслав Мстиславич" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Изяслав Мстиславич</strong> (1146–1154 гг.)
+                    <p>Вёл упорную борьбу с Юрием Долгоруким. Его потомство утвердилось на Волыни и в Галиче.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/dolgorukij.jpg" alt="Юрий Долгорукий" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Юрий Долгорукий</strong> (1155–1157 гг.)
+                    <p>суздальский князь, занял Киев лишь в конце жизни. При нём в летописи впервые упомянута Москва (1147 г.).</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/mromanovich.jpg" alt="Мстислав Романович" class="ruler-avatar">
+                <div class="ruler-info">
+                    <strong>Мстислав Романович</strong> (1212–1223 гг.)
+                    <p>Погиб на реке Калке, наблюдая за разгромом союзных войск, не вступив в бой.</p>
+                </div>
+            </li>
         </ul>
 
         <h2>Культура и значение</h2>
